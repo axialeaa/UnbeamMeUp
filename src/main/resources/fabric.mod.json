@@ -1,40 +1,25 @@
 {
 	"schemaVersion": 1,
-	"id": "mod-id",
+	"id": "unbeam-me-up",
 	"version": "${version}",
-	"name": "Example Mod",
-	"description": "description",
+	"name": "Unbeam Me Up",
+	"description": "Removes the light beams emitted by dying ender dragons!",
 	"authors": [
 		"axialeaa"
 	],
 	"contact": {
-		"homepage": "https://modrinth.com/mod/mod-id",
-		"sources": "https://github.com/axialeaa/ExampleMod",
-		"issues": "https://github.com/axialeaa/ExampleMod/issues"
+		"sources": "https://github.com/axialeaa/UnbeamMeUp",
+		"issues": "https://github.com/axialeaa/UnbeamMeUp/issues"
 	},
 	"license": "LGPLv3",
-	"icon": "assets/mod-id/icon.png",
-	"environment": "*",
-	"entrypoints": {
-		"main": [
-			"com.axialeaa.modid.ExampleMod"
-		]
-	},
-	"custom": {
-		"modmenu": {
-			"links": {
-				"modmenu.github_releases": "https://github.com/axialeaa/ExampleMod/releases",
-				"modmenu.modrinth": "https://modrinth.com/mod/mod-id"
-			}
-		}
-	},
+	"icon": "assets/unbeam-me-up/icon.png",
+	"environment": "client",
 	"mixins": [
-		"mod-id.mixins.json"
+		"unbeam-me-up.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.15.10",
-		"minecraft": "~1.21",
-		"java": ">=21",
-		"fabric-api": "*"
+		"minecraft": "1.17.1",
+		"java": ">=17"
 	}
 }
